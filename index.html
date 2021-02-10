@@ -4,14 +4,27 @@
 
 <head>
 
-  <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" integrity="sha384-Nlo8b0yiGl7Dn+BgLn4mxhIIBU6We7aeeiulNCjHdUv/eKHx59s3anfSUjExbDxn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha384-Dziy8F2VlJQLMShA6FHWNul/veM9bCkRUaLqr199K94ntO5QUrLJBEbYegdSkkqX" crossorigin="anonymous"></script>
+    <title>Quest'n'Find</title>
 </head>
 
-<body>
+<body id="body">
+    <script type="text/javascript" src="./script.js"></script>
+    <h1 onclick="changeBackground()">Quest'n'Find</h1>
+    <form>
+        <input type="text" id="query"><br /><br />
+        <button type="button" value="Search" id="searchButton" onclick="apiSearch()">Search</button>
+        <button type="button" id="timeButton" onclick="showTime()">What time is it?</button>
+    </form>
+    <div id="searchResults" title="Search Results">
 
-  <script type="text/javascript" src="./script.js"></script>
+    </div>
+    <div id="time" title="Current Time:">
 
+    </div>
 </body>
 
 </html>
